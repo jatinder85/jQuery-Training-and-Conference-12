@@ -9,7 +9,7 @@ Cool Stuff from jQuery Training and Conference (SF 12)
   <li>
       jQuery Training (June 27th 2012)
       <ul>
-        <li>aaaaa</li>
+        <li>BRIAN WAS HERE!</li>
         <li>nnnnn</li>
       </ul>
   </li>
