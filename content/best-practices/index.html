@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bocoup jQuery Training :: Best Practices</title>
+
+    <link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/bocoup.css">
+    <link rel="stylesheet" href="/assets/css/test.css">
+
+    <style>
+      ul.selected {
+        color: inherit;
+        background: inherit;
+      }
+      li.selected,
+      ul.selected li {
+        color: #070;
+        background: #afa;
+      }
+    </style>
+</head>
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="http://training.bocoup.com/">Bocoup jQuery Training :: Best Practices</a>
+        <div>
+          <ul class="nav">
+            <li class="active"><a href="/">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="main">
+    <div id="target" class="well"></div>
+
+    <div id="content">
+      <div id="col1">
+        <h1 id="header1">This is an H1</h1>
+        <h2 id="header2">This is an H2</h2>
+        <h3 id="header3">This is an H3</h3>
+
+        <p id="paragraph1">Fusce tincidunt, <a href="#sample1">risus sed</a> molestie accumsan, ligula dui congue turpis, id rutrum dui est fringilla enim. Integer imperdiet purus sed sapien vehicula aliquet.</p>
+        <p id="paragraph2">Vivamus vel lectus et ligula vulputate mollis. Aliquam vehicula nisi in risus bibendum a tempus urna consectetur.</p>
+        <p id="paragraph3">Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Proin eget lorem dolor. Nulla urna neque, congue quis porttitor id, adipiscing et neque. <i>Lorem ipsum dolor sit amet, <a href="#sample2">consectetur</a> adipiscing elit.</i> Nulla interdum auctor felis aliquet vulputate. Vestibulum faucibus bibendum faucibus.</p>
+        <p style="display:none">Morbi est tortor, congue nec dapibus sit amet, congue non mi. Nulla vulputate rutrum nisl ac varius. Cras faucibus eros vel justo vulputate in aliquet eros auctor.</p>
+      </div>
+      <div id="col2">
+        <h4>Bob the rooster, the <b>jQuery</b> logo, and Chuck <b>&ldquo;JavaScript&rdquo;</b> Norris:</h4>
+        <p>
+          <img src="../../assets/img/bob.png" alt="Bob">
+          <img src="../../assets/img/jquery.png" alt="jQuery">
+          <img src="../../assets/img/javascript.png" alt="JavaScript">
+        </p>
+
+        <h3>An unordered list</h3>
+        <ul id="list1">
+          <li>This is the very <a href="#first">first</a> list item</li>
+          <li>This is <i>the <a href="#second">second</a></i> list item</li>
+          <li>This is the <a href="#third">third</a> list item</li>
+        </ul>
+
+        <h3>Another unordered list</h3>
+        <ul id="list2">
+          <li>This is the very <a href="#first">first</a> list item</li>
+          <li>This is <i>the <a href="#second">second</a></i> list item in the second list</li>
+          <li>This is the <a href="#third">third</a> list item</li>
+        </ul>
+
+        <h3>An ordered list</h3>
+        <ol id="list3">
+          <li>This is the very <a href="#first">first</a> list item</li>
+          <li>This is <i>the <a href="#second">second</a></i> list item</li>
+          <li>This is the <a href="#third">third</a> list item</li>
+        </ol>
+      </div>
+    </div>
+    <form action="." id="bottom" class="well form-inline">
+      <input type="text" name="first" class="input-small" placeholder="First">
+      <input type="text" name="last" class="input-small" placeholder="Last">
+      <label class="checkbox">
+        <input type="checkbox" name="mycheck" value="first-checkbox" checked>
+        First
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" name="mycheck" value="second-checkbox" checked>
+        Second
+      </label>
+      <label class="radio">
+        <input type="radio" name="myradio" value="first-button">
+        First
+      </label>
+      <label class="radio">
+        <input type="radio" name="myradio" value="second-button" checked>
+        Second
+      </label>
+      <select name="multi" class="input-small" multiple>
+        <option selected>Bocoup</option>
+        <option>jQuery</option>
+        <option selected>JavaScript</option>
+      </select>
+      <select name="myselect" class="input-small">
+        <option>Bocoup</option>
+        <option selected>jQuery</option>
+        <option>JavaScript</option>
+      </select>
+      <input type="submit" value="Submit!" class="btn btn-primary">
+    </form>
+
+  </div>
+
+  <script src="/assets/lib/jquery/jquery-1.7.2.min.js"></script>
+
+</body>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bocoup jQuery Training :: Templates</title>
+
+    <link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/lib/CodeMirror-2.25/lib/codemirror.css">
+    <link rel="stylesheet" href="/assets/lib/CodeMirror-2.25/theme/default.css">
+    <link rel="stylesheet" href="/assets/css/bocoup.css">
+</head>
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="http://training.bocoup.com/">Bocoup jQuery Training :: Templates</a>
+        <div>
+          <ul class="nav">
+            <li class="active"><a href="/">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="main">
+    <div class="row">
+      <div class="span8">
+        <div id="notes"></div>
+        <h2>Template Files</h2>
+        <div data-template="/templates/person.tmpl"></div>
+        <div data-template="/templates/people.tmpl"></div>
+      </div>
+      <div class="span3">
+        <h2>Results</h2>
+        <div id="target" class="well"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="/assets/lib/jquery/jquery-1.7.2.min.js"></script>
+  <script src="/assets/lib/underscore/underscore.min.js"></script>
+
+  <script src="/assets/lib/CodeMirror-2.25/lib/codemirror.js"></script>
+  <script src="/assets/lib/CodeMirror-2.25/mode/javascript/javascript.js"></script>
+  <script src="/assets/lib/CodeMirror-2.25/mode/htmlmixed/htmlmixed.js"></script>
+  <script src="/assets/lib/bocoup.js"></script>
+
+  <script>
+  $(function() {
+    CodeEditor('notes.js', '#notes');
+    $('[data-template]').each(function() {
+      var filename = $(this).attr('data-template');
+      $('<h3>', { text : filename }).insertBefore(this);
+      CodeEditor(filename, this, { noButtons : true });
+    });
+  });
+  </script>
+
+
+  <script type="text/template" id="tpl-person">
+  <li>
+    <h2><%= name %></h2>
+    <p><%= bio %></p>
+  </li>
+  </script>
+</body>

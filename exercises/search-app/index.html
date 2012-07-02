@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bocoup jQuery Training :: Exercise :: Search App</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/bocoup.css">
+    <style>
+    #liked, #results {
+      list-style: none;
+      margin: 0 0 10px 0;
+    }
+
+    #results li {
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+    }
+    </style>
+</head>
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="http://training.bocoup.com/">Bocoup jQuery Training</a>
+        <div>
+          <ul class="nav">
+            <li class="active"><a href="/">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="page-header">
+      <h1>Srchr</h1>
+    </div>
+
+      <form id="searchForm" class="well form-search">
+        <input type="text" name="q" class="input-medium search-query" placeholder="Enter your search">
+        <input type="submit" class="btn" value="Search">
+      </form>
+
+    <div class="row">
+      <div class="span7">
+        <ul id="results">
+          <li class="no-results">There are no results yet.</li>
+        </ul>
+      </div>
+
+      <div class="span4 offset1">
+        <div class="well">
+          <h3>Liked</h3>
+          <ul id="liked">
+            <li class="no-results">You haven't liked anything yet.</li>
+          </ul>
+        </div>
+      </div>
+
+  </div>
+
+  <script src="/assets/lib/jquery/jquery-1.7.2.min.js"></script>
+  <script src="/assets/lib/underscore/underscore.min.js"></script>
+  <script src="/exercises/search-app/js/app.js"></script>
+  <!-- <script src="/exercises/search-app/js/solution.js"></script> -->
+</body>

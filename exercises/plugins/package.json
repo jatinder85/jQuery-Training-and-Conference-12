@@ -1,0 +1,32 @@
+{
+  "name": "jquery.zebra-stripe",
+  "title": "Pre-jQuery Conf Zebra Striping Plugin",
+  "description": "The best jQuery zebra striping plugin ever.",
+  "version": "0.1.0",
+  "homepage": "",
+  "author": {
+    "name": "John Q. Public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    },
+    {
+      "type": "GPL"
+    }
+  ],
+  "dependencies": {
+    "jquery": "~1.5"
+  },
+  "devDependencies": {
+    "grunt": "0.3.10"
+  },
+  "keywords": []
+}

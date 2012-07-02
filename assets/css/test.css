@@ -1,0 +1,52 @@
+#main {
+  padding: 0;
+  min-width: 510px;
+  max-width: 940px;
+  width: auto;
+}
+
+#target {
+  padding: 5px;
+  margin: 0 10px 10px;
+  width: auto;
+}
+
+
+#col1, #col2 {
+  width: 50%;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#bottom {
+  clear: both;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#bottom input {
+  margin-bottom: 10px;
+}
+
+
+#content img {
+  margin: 0.6em 15px 0 0;
+}
+
+#content li {
+  margin-bottom: 1px;
+}
+
+.highlight {
+  outline: 2px solid #f70;
+}
+
+a.highlight {
+  outline: 2px solid #f70 !important;
+}
+
+.selected {
+  color: #070;
+  background: #afa;
+}

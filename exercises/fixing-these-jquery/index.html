@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bocoup jQuery Training :: Exercise :: Fixing These jQuery</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/lib/CodeMirror-2.25/lib/codemirror.css">
+    <link rel="stylesheet" href="/assets/lib/CodeMirror-2.25/theme/ambiance.css">
+    <link rel="stylesheet" href="/assets/css/bocoup.css">
+</head>
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="http://training.bocoup.com/">Bocoup jQuery Training</a>
+        <div>
+          <ul class="nav">
+            <li class="active"><a href="/">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="page-header">
+      <h1>Fixing these jQuery</h1>
+    </div>
+
+    <div id="notes"></div>
+
+  </div>
+
+  <script src="/assets/lib/jquery/jquery-1.7.2.min.js"></script>
+  <script src="/assets/lib/CodeMirror-2.25/lib/codemirror.js"></script>
+  <script src="/assets/lib/CodeMirror-2.25/mode/javascript/javascript.js"></script>
+  <script src="/assets/lib/bocoup.js"></script>
+
+  <script>
+  $(function() { CodeEditor('fix-these-jquery.js', '#notes'); });
+  </script>
+</body>

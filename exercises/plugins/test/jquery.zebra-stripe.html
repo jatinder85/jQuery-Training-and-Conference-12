@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pre-jQuery Conf Zebra Striping Plugin Test Suite</title>
+  <!-- Load local jQuery, removing access to $ (use jQuery, not $). -->
+  <script src="../libs/jquery/jquery.js"></script>
+  <script>jQuery.noConflict()</script>
+  <!-- Load local QUnit (grunt requires v1.0.0 or newer). -->
+  <link rel="stylesheet" href="../libs/qunit/qunit.css" media="screen">
+  <script src="../libs/qunit/qunit.js"></script>
+  <!-- Load local lib and tests. -->
+  <script src="../src/jquery.zebra-stripe1.js"></script>
+  <script src="jquery.zebra-stripe1_test.js"></script>
+  <!--
+  <script src="../src/jquery.zebra-stripe2.js"></script>
+  <script src="jquery.zebra-stripe2_test.js"></script>
+  -->
+  <!--
+  <script src="../src/jquery.zebra-stripe3.js"></script>
+  <script src="jquery.zebra-stripe3_test.js"></script>
+  -->
+</head>
+<body>
+  <h1 id="qunit-header">Pre-jQuery Conf Zebra Striping Plugin Test Suite</h1>
+  <h2 id="qunit-banner"></h2>
+  <div id="qunit-testrunner-toolbar"></div>
+  <h2 id="qunit-userAgent"></h2>
+  <ol id="qunit-tests"></ol>
+  <div id="qunit-fixture">
+    <table>
+      <tbody>
+        <tr class="zs0"><td>cell 1</td><td>cell 2</td><td>cell 3</td></tr>
+        <tr class="zs1"><td>cell 1</td><td>cell 2</td><td>cell 3</td></tr>
+        <tr class="zs0"><td>cell 1</td><td>cell 2</td><td>cell 3</td></tr>
+        <tr class="zs1"><td>cell 1</td><td>cell 2</td><td>cell 3</td></tr>
+        <tr class="zs0"><td>cell 1</td><td>cell 2</td><td>cell 3</td></tr>
+      </tbody>
+    </table>
+    <table>
+      <tbody>
+        <tr class="zs0"><td>cell 1</td><td>cell 2</td><td>cell 3</td></tr>
+        <tr class="zs1"><td>cell 1</td><td>cell 2</td><td>cell 3</td></tr>
+        <tr class="zs0"><td>cell 1</td><td>cell 2</td><td>cell 3</td></tr>
+        <tr class="zs1"><td>cell 1</td><td>cell 2</td><td>cell 3</td></tr>
+        <tr class="zs0"><td>cell 1</td><td>cell 2</td><td>cell 3</td></tr>
+      </tbody>
+    </table>
+    <ul>
+      <li class="zs0">item 1</li>
+      <li class="zs1">item 2</li>
+      <li class="zs0">item 3</li>
+      <li class="zs1">item 4</li>
+      <li class="zs0">item 5</li>
+    </ul>
+    <ol>
+      <li class="zs0">item 1</li>
+      <li class="zs1">item 2</li>
+      <li class="zs0">item 3</li>
+      <li class="zs1">item 4</li>
+      <li class="zs0">item 5</li>
+    </ol>
+  </div>
+</body>
+</html>

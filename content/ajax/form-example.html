@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bocoup jQuery Training :: $.ajax :: Form Example</title>
+
+    <link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/lib/CodeMirror-2.25/lib/codemirror.css">
+    <link rel="stylesheet" href="/assets/lib/CodeMirror-2.25/theme/default.css">
+    <link rel="stylesheet" href="/assets/css/bocoup.css">
+</head>
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="http://training.bocoup.com/">Bocoup jQuery Training :: $.ajax :: Form Example</a>
+        <div>
+          <ul class="nav">
+            <li class="active"><a href="/">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="main">
+    <form id="myForm" class="form-inline">
+      <input type="text" name="first" placeholder="First Name">
+      <input type="text" name="last" placeholder="Last Name">
+      <button class="btn">Submit</button>
+    </form>
+    <div id="target"></div>
+    <div id="notes"></div>
+  </div>
+
+  <script src="/assets/lib/jquery/jquery-1.7.2.min.js"></script>
+  <script src="/assets/lib/CodeMirror-2.25/lib/codemirror.js"></script>
+  <script src="/assets/lib/CodeMirror-2.25/mode/javascript/javascript.js"></script>
+  <script src="/assets/lib/bocoup.js"></script>
+
+  <script>
+  $(function() { CodeEditor('form-example.js', '#notes'); });
+  </script>
+
+</body>
