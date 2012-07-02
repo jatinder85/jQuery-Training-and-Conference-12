@@ -9,11 +9,8 @@ Cool Stuff from jQuery Training and Conference (SF 12)
   <li>
       jQuery Training (June 27th 2012)
       <ul>
-<<<<<<< HEAD
         <li>BRIAN WAS HERE!</li>
-=======
         <li>Brian Can Edit this File Too</li>
->>>>>>> Brian Can Make Changes
         <li>nnnnn</li>
       </ul>
   </li>
